@@ -4,9 +4,25 @@ let deleteAllTaskBtn = document.querySelector(".delete-all-btn");
 let tasksContainer = document.querySelector(".tasks-container");
 
 window.addEventListener("DOMContentLoaded", () => {
-  tasksContainer.innerHTML = localStorage.getItem("tasks") || "";
+  let savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+  tasksContainer.innerHTML = "";
+
+  savedTasks.forEach(task => {
+    let li = document.createElement("li");
+
+    li.innerHTML = `
+      ${task}
+      <button class="doneBtn">Done</button>
+      <button class="deleteBtn">Delete task</button>
+    `;
+
+    tasksContainer.appendChild(li);
+  });
+
   addDeleteListeners();
 });
+
 
 addTaskBtn.addEventListener("click", () => {
   if (inputBox.value.trim() === "") {
