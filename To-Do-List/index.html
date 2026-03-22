@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="app-title">Get Things Done</h1>
+    <div class="to-do-container">
+      <div class="input-container">
+        <input
+          type="text"
+          class="user-task"
+          placeholder="What’s on your list today?"
+        />
+        <div class="btns-container">
+          <button class="add-btn">Add Task</button>
+          <button class="delete-all-btn">Clear All</button>
+        </div>
+      </div>
+      <div class="tasks-list-container">
+        <h2 class="tasks-list-title">Today’s Tasks</h2>
+        <ul class="tasks-container"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  padding: 10px;
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff, #f5f7fb);
+}
+
+.to-do-container {
+  width: 400px;
+  max-width: 90%;
+  background: #ffffff;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.app-title {
+    margin: 20px 0px;
+    letter-spacing: 0.5px;
+  font-size: clamp(28px, 5vw, 38px);
+  font-weight: 600;
+  color: #2c2c2c;
+  position: relative;
+}
+
+.app-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #5f6dfb;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 10px;
+}
+
+.to-do-container {
+    width: 100%;
+    max-width:420px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.user-task {
+  width: 100%;
+  background: #f1f5f9;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  margin-top: 20px;  
+  padding: 13px 12px;
+}
+
+.user-task:focus {
+  outline: none;
+  border: 2px solid #5f6dfb;
+  box-shadow: 0 0 8px rgba(95, 109, 251, 0.3);
+}
+
+.btns-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.add-btn {
+  background: #6366f1;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.25);
+}
+
+.add-btn:hover {
+  background: #4f46e5;
+  box-shadow: 0 6px 14px rgba(99, 102, 241, 0.3);
+}
+
+.add-btn:active {
+  transform: scale(0.97);
+}
+
+.delete-all-btn {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(239, 68, 68, 0.15);
+}
+
+.delete-all-btn:hover {
+  background: #fee2e2;
+  box-shadow: 0 6px 14px rgba(239, 68, 68, 0.25);
+}
+
+.delete-all-btn:active {
+  transform: scale(0.97);
+}
+
+.tasks-list-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #334155;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.tasks-list-title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #6366f1;
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+.tasks-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tasks-container li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8fafc;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #1e293b;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  animation: fadeIn 0.3s ease;
+  transition: 0.2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tasks-container li:hover {
+     transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.doneBtn {
+  background: #dcfce7;
+  color: #16a34a;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.doneBtn:hover {
+  background: #bbf7d0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.deleteBtn {
+  background: #fee2e2;
+  color: #dc2626;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 20px;
+  transition: 0.2s;
+}
+
+.deleteBtn:hover {
+  background: #fecaca;
+}
+
+@media (max-width: 480px) {
+  .to-do-container {
+    padding: 15px;
+  }
+
+  .user-task {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .add-btn,
+  .delete-all-btn {
+    width: 100%;
+  }
+
+  .btns-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tasks-container li {
+    font-size: 14px;
+  }
+}
