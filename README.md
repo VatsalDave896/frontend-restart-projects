@@ -21,22 +21,18 @@
 
 # 📖 About This Repository
 
-This repository contains my frontend development projects built during my frontend restart journey.
+This repository contains frontend development projects built during my frontend restart journey.
 
-The main purpose of this repository is to:
+The main objective of this repository is to strengthen frontend fundamentals by building responsive and practical real-world applications using modern web technologies.
 
-- Strengthen frontend fundamentals
-- Build real-world projects
-- Improve JavaScript problem-solving
-- Create responsive and modern UI/UX
-- Learn scalable project structure
-- Practice consistent development
+## 🎯 Focus Areas
 
-All projects are built using:
-
-- HTML5
-- CSS3
-- JavaScript (ES6+)
+- Responsive Web Design
+- DOM Manipulation
+- JavaScript Logic Building
+- API Integration
+- UI/UX Improvements
+- Real-World Project Development
 
 ---
 
@@ -44,39 +40,49 @@ All projects are built using:
 
 | Project | Description | Tech Stack | Live Demo |
 |---|---|---|---|
-| ✅ To-Do List App | Responsive task management application with Local Storage support | HTML, CSS, JavaScript | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://frontend-restart-projects.vercel.app/) |
-| ✅ Weather App | Responsive weather application using OpenWeather API integration | HTML, CSS, JavaScript, API | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://frontend-restart-projects-5uth.vercel.app/) |
+| To-Do List App | Responsive task management application with Local Storage support | HTML, CSS, JavaScript | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://frontend-restart-to-do-list.vercel.app/) |
+| Weather App | Responsive weather application with OpenWeather API integration | HTML, CSS, JavaScript, API | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://frontend-restart-weather-app.vercel.app/) |
 
 ---
 
-# 🛠️ Project Features
+# 🛠️ Tech Stack
 
-## To-Do List App
+<p align="left">
 
-### Features
+<img src="https://skillicons.dev/icons?i=html,css,javascript,git,github,vscode" />
+
+</p>
+
+---
+
+# Project 1 — To-Do List App
+
+## ✨ Features
 
 - Add tasks dynamically
 - Delete tasks with confirmation
 - Mark tasks as completed
 - Disable actions after completion
-- Data persistence using Local Storage
-- Fully responsive design
+- Persistent storage using Local Storage
+- Fully responsive UI
 
-### Tech Used
+## 🧠 Concepts Practiced
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+- DOM Manipulation
+- Event Handling
+- Local Storage
+- Conditional Rendering
+- Responsive Design
 
 ---
 
-## Weather App
+# Project 2 — Weather App
 
-### Features
+## ✨ Features
 
 - Search weather by city name
 - Real-time weather data fetching
-- Dynamic weather icons
+- Dynamic weather condition icons
 - Temperature display
 - Humidity information
 - Wind speed tracking
@@ -84,25 +90,16 @@ All projects are built using:
 - Error handling and validation
 - Responsive glassmorphism UI
 
-### Tech Used
+## 🧠 Concepts Practiced
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![API](https://img.shields.io/badge/API-OpenWeather-orange?style=flat-square)
+- Async/Await
+- Fetch API
+- API Integration
+- Dynamic UI Updates
+- Error Handling
+- Responsive Design
 
 > ⚠️ Note: API key is intentionally removed from the public repository for security purposes.
-
----
-
-# 🎯 Current Goals
-
-- Build practical frontend projects
-- Improve JavaScript logic building
-- Master responsive design
-- Create polished UI/UX
-- Learn modern frontend workflows
-- Prepare for advanced/full-stack development
 
 ---
 
@@ -110,19 +107,12 @@ All projects are built using:
 
 | Status | Progress |
 |---|---|
-| ✅ Project 1 Completed | To-Do List App |
-| ✅ Project 2 Completed | Weather App |
-| 🚀 More Projects Coming Soon | In Progress |
+|  Completed | To-Do List App |
+|  Completed | Weather App |
+|  In Progress | More Frontend Projects |
 
 
 
-# 🤝 Connect With Me
-
-## 👨‍💻 Developer: Vatsal Dave
-
-Passionate about frontend development, UI/UX, and building real-world web applications.
-
----
 
 # ⭐ Support
 
