@@ -2,55 +2,67 @@
 
 <p align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8EC5FC,100:E0C3FC&height=220&section=header&text=Frontend%20Restart%20Journey&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=38" />
+
+</p>
+
+<p align="center">
+
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Frontend](https://img.shields.io/badge/Frontend-Development-blueviolet?style=for-the-badge)
 ![Responsive](https://img.shields.io/badge/Responsive-Design-38B2AC?style=for-the-badge)
-![Frontend](https://img.shields.io/badge/Frontend-Projects-purple?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![Projects](https://img.shields.io/badge/Projects-Active-success?style=for-the-badge)
 
 </p>
 
 ---
 
-## 📖 About The Repository
+# 📖 About This Repository
 
-This repository contains frontend projects built during my frontend restart journey.
+This repository contains my frontend development projects built during my frontend restart journey.
 
-The primary goal of this repository is to strengthen core frontend development skills by building responsive and practical real-world applications using:
+The main purpose of this repository is to:
+
+- Strengthen frontend fundamentals
+- Build real-world projects
+- Improve JavaScript problem-solving
+- Create responsive and modern UI/UX
+- Learn scalable project structure
+- Practice consistent development
+
+All projects are built using:
 
 - HTML5
 - CSS3
 - JavaScript (ES6+)
 
-Each project focuses on:
-- Clean UI/UX
-- Responsive layouts
-- DOM manipulation
-- Problem solving
-- Real-world functionality
-- Better code structure and maintainability
+---
+
+# 📂 Live Projects
+
+| Project | Description | Tech Stack | Live Demo |
+|---|---|---|---|
+| ✅ To-Do List App | Responsive task management application with Local Storage support | HTML, CSS, JavaScript | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://frontend-restart-projects.vercel.app/) |
+| ✅ Weather App | Responsive weather application using OpenWeather API integration | HTML, CSS, JavaScript, API | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://frontend-restart-projects-5uth.vercel.app/) |
 
 ---
 
-# 📂 Projects
+# 🛠️ Project Features
 
----
+## To-Do List App
 
-## ✅ 1. To-Do List App
-
-A clean and responsive task management application built using vanilla JavaScript.
-
-### ✨ Features
+### Features
 
 - Add tasks dynamically
 - Delete tasks with confirmation
 - Mark tasks as completed
 - Disable actions after completion
-- Persistent data using Local Storage
-- Responsive UI for all screen sizes
+- Data persistence using Local Storage
+- Fully responsive design
 
-### 🛠️ Tech Stack
+### Tech Used
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
@@ -58,11 +70,9 @@ A clean and responsive task management application built using vanilla JavaScrip
 
 ---
 
-## ✅ 2. Weather App
+## Weather App
 
-A modern glassmorphism-inspired weather application using the OpenWeather API.
-
-### ✨ Features
+### Features
 
 - Search weather by city name
 - Real-time weather data fetching
@@ -71,31 +81,55 @@ A modern glassmorphism-inspired weather application using the OpenWeather API.
 - Humidity information
 - Wind speed tracking
 - Visibility details
-- Error handling and input validation
-- Fully responsive design
+- Error handling and validation
+- Responsive glassmorphism UI
 
-### 🛠️ Tech Stack
+### Tech Used
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![API](https://img.shields.io/badge/API-OpenWeather-orange?style=flat-square)
 
+> ⚠️ Note: API key is intentionally removed from the public repository for security purposes.
+
 ---
 
 # 🎯 Current Goals
 
-- Build real-world frontend projects
-- Improve JavaScript problem-solving skills
-- Master responsive web design
-- Create polished UI/UX experiences
-- Learn scalable frontend architecture
-- Develop production-level project structure
+- Build practical frontend projects
+- Improve JavaScript logic building
+- Master responsive design
+- Create polished UI/UX
+- Learn modern frontend workflows
+- Prepare for advanced/full-stack development
 
 ---
 
 # 📈 Repository Progress
 
-- Project 1 Completed
-- Project 2 Completed
-- More projects coming soon...
+| Status | Progress |
+|---|---|
+| ✅ Project 1 Completed | To-Do List App |
+| ✅ Project 2 Completed | Weather App |
+| 🚀 More Projects Coming Soon | In Progress |
+
+
+
+# 🤝 Connect With Me
+
+## 👨‍💻 Developer: Vatsal Dave
+
+Passionate about frontend development, UI/UX, and building real-world web applications.
+
+---
+
+# ⭐ Support
+
+If you like this repository, consider giving it a ⭐ on GitHub.
+
+<p align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0C3FC,100:8EC5FC&height=120&section=footer"/>
+
+</p>
