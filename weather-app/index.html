@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weather-container">
+      <h1 class="weather-heading">Weather App</h1>
+      <div class="input-btns-container">
+        <input
+          type="text"
+          placeholder="Enter your city name"
+          aria-label="City Name"
+        />
+        <button class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <h2 class="city-name">New York</h2>
+      <div class="weather-main">
+        <div class="weather-image">
+          <img src="assets/cloudy.png" alt="Cloudy" />
+        </div>
+
+        <div class="weather-temp">
+          <h2>30°C</h2>
+          <p>Cloudy</p>
+        </div>
+      </div>
+      <div class="other-info">
+        <div class="info-box">
+          <span class="info-number humidity">23%</span>
+          <span class="info-text">Humidity</span>
+        </div>
+
+        <div class="info-box">
+          <span class="info-number windspeed">12 km/h</span>
+          <span class="info-text">Wind Speed</span>
+        </div>
+
+        <div class="info-box">
+          <span class="info-number visibility">8 km</span>
+          <span class="info-text">Visibility</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

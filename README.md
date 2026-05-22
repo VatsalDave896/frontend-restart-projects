@@ -25,6 +25,25 @@ A clean and responsive task management web app.
  CSS
  JavaScript
 
+### ✅ Project 2 – Weather App
+
+A modern and responsive weather search web app.
+
+**Features:**
+
+ Search weather by city name
+ Fetch real-time weather data using OpenWeather API
+ Display temperature and weather condition icon
+ Show humidity, wind speed, and visibility
+ Input validation for empty or invalid city names
+ Responsive design for mobile and desktop
+
+**Tech Used:**
+
+ HTML
+ CSS
+ JavaScript
+
 ## 🎯 Goals
 
  Build real-world frontend projects
