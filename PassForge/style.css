@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a, #212b41, #2d2965);
+}
+
+.password-web-container {
+  box-shadow: 0 8px 32px rgb(1, 1, 1);
+  border: 2px solid black;
+  background: rgba(34, 45, 67, 0.75);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.pass-heading-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pass-heading {
+  padding: 32px 20px;
+  text-align: center;
+  font-size: 2rem;
+  color: #f8fafc;
+}
+
+.pass-subheading {
+  font-size: 1.5rem;
+  padding: 0px 30px;
+  color: #cbd5e1;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.display-box {
+  padding: 0px 10px;
+  height: 2.5rem;
+  width: 80%;
+  border-radius: 8px;
+  font-size: 17px;
+  outline: none;
+  color: #000000;
+  border: none;
+}
+
+.input-container i {
+  position: relative;
+  top: 12px;
+  right: 39px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.password-conditions-container {
+  padding: 20px 30px;
+}
+
+.list-parent {
+  list-style: none;
+}
+
+.input-parent {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  color: #e2e8f0;
+}
+
+.input-parent input {
+  cursor: pointer;
+}
+
+.input-parent label {
+  cursor: pointer;
+}
+
+.pass-length-container {
+  padding: 10px 30px;
+  color: #e2e8f0;
+}
+
+#lengthValue {
+  display: inline;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#pass-slider {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.pass-strength-container {
+  padding: 10px 27px;
+  color: #e2e8f0;
+}
+
+#passStrength {
+  font-size: 17px;
+  font-weight: 600;
+  color: #22c55e;
+}
+
+.generate-pass-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.generate-pass-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #6f68c9;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+}

@@ -42,6 +42,7 @@ The main objective of this repository is to strengthen frontend fundamentals by 
 |---|---|---|---|
 | To-Do List App | Responsive task management application with Local Storage support | HTML, CSS, JavaScript | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://frontend-restart-to-do-list.vercel.app/) |
 | Weather App | Responsive weather application with OpenWeather API integration | HTML, CSS, JavaScript, API | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://frontend-restart-weather-app.vercel.app/) |
+| PassForge Password Generator | Responsive password generator with customizable password conditions and strength indicator | HTML, CSS, JavaScript | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](YOUR_LIVE_LINK_HERE) |
 
 ---
 
@@ -103,16 +104,44 @@ The main objective of this repository is to strengthen frontend fundamentals by 
 
 ---
 
+# Project 3 — PassForge Password Generator
+
+## ✨ Features
+
+- Generate strong random passwords instantly
+- Custom password length selection
+- Uppercase character support
+- Lowercase character support
+- Numbers inclusion
+- Symbols inclusion
+- Password strength indicator
+- One-click password copy functionality
+- Input validation and error handling
+- Responsive glassmorphism UI design
+
+## 🧠 Concepts Practiced
+
+- Random Password Generation Logic
+- DOM Manipulation
+- Event Handling
+- Clipboard API
+- Conditional Rendering
+- JavaScript Arrays & Loops
+- Dynamic Strength Calculation
+- Responsive Design
+
+---
+
 # 📈 Repository Progress
 
 | Status | Progress |
 |---|---|
-|  Completed | To-Do List App |
-|  Completed | Weather App |
-|  In Progress | More Frontend Projects |
+| ✅ Completed | To-Do List App |
+| ✅ Completed | Weather App |
+| ✅ Completed | PassForge Password Generator |
+| 🚧 In Progress | More Frontend Projects |
 
-
-
+---
 
 # ⭐ Support
 

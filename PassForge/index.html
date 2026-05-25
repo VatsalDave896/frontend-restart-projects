@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PassForge</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="password-web-container">
+      <div class="pass-heading-container">
+        <h2 class="pass-heading">PassForge</h2>
+      </div>
+
+      <h3 class="pass-subheading">Generate strong passwords instantly</h3>
+
+      <div class="input-container">
+        <input type="text" class="display-box" id="passwordDisplay" readonly />
+        <i class="fa-solid fa-copy copy-icon copy-btn"></i>
+      </div>
+
+      <div class="password-conditions-container">
+        <ul class="list-parent">
+          <li class="input-parent">
+            <input type="checkbox" name="uppercase" id="uppercase" />
+            <label for="uppercase">Uppercase</label>
+          </li>
+          <li class="input-parent">
+            <input type="checkbox" name="lowercase" id="lowercase" />
+            <label for="lowercase">Lowercase</label>
+          </li>
+          <li class="input-parent">
+            <input type="checkbox" name="numbers" id="numbers" />
+            <label for="numbers">Numbers</label>
+          </li>
+          <li class="input-parent">
+            <input type="checkbox" name="symbols" id="symbols" />
+            <label for="symbols">Symbols</label>
+          </li>
+        </ul>
+      </div>
+      <p id="error-statement"></p>
+      <div class="pass-length-container">
+        <span>Password Length : </span>
+        <p id="lengthValue">12</p>
+        <input type="range" min="6" max="20" value="12" id="pass-slider" />
+      </div>
+
+      <div class="pass-strength-container">
+        <p>Strength : <span id="passStrength"></span></p>
+      </div>
+
+      <div class="generate-pass-container">
+        <button type="button" class="generate-pass-btn">
+          Generate Password
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
