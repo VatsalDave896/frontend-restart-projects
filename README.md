@@ -42,7 +42,7 @@ The main objective of this repository is to strengthen frontend fundamentals by 
 |---|---|---|---|
 | To-Do List App | Responsive task management application with Local Storage support | HTML, CSS, JavaScript | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://frontend-restart-to-do-list.vercel.app/) |
 | Weather App | Responsive weather application with OpenWeather API integration | HTML, CSS, JavaScript, API | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://frontend-restart-weather-app.vercel.app/) |
-| PassForge Password Generator | Responsive password generator with customizable password conditions and strength indicator | HTML, CSS, JavaScript | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](YOUR_LIVE_LINK_HERE) |
+| PassForge Password Generator | Responsive password generator with customizable password conditions and strength indicator | HTML, CSS, JavaScript | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://passforge-vatsal-dave.vercel.app/) |
 
 ---
 
