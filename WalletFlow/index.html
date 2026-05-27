@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WalletFlow — Smart Expense Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="web-container">
+        <div class="header-container">
+          <div class="logo-title-container">
+            <img
+              src="assets/wallet-image.png"
+              alt="WalletFlow Logo"
+              id="walletFlowLogo"
+            />
+            <h2 class="app-name">WalletFlow</h2>
+          </div>
+
+          <h3 class="project-subheading">
+            Track your spending <span id="smarterText">Smarter</span> and stay in
+            <span id="controlText">Control</span>
+          </h3>
+
+          <div class="date-container">
+            <span id="todayDate">26 May</span>
+            <span id="weekDay">, Tuesday</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="web-container">
+      <div class="stats-cards-container">
+        <div class="transaction-cards stat-card stat-balance">
+          <div class="stat-card-top">
+            <h3 class="text">Current Balance</h3>
+            <span class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M21 7H3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M21 12H3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M21 17H3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </div>
+          <h1 id="balanceNumber" class="amount"><span id="rupeeSymbol">₹</span> 10,000</h1>
+        </div>
+
+        <div class="transaction-cards stat-card stat-income">
+          <div class="stat-card-top">
+            <h3 class="text">Monthly Income</h3>
+            <span class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7 17V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M7 7h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M7 7l10 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </div>
+          <h1 id="incomeNumber" class="amount"><span id="rupeeSymbol">₹</span> 10,000</h1>
+        </div>
+
+        <div class="transaction-cards stat-card stat-expense">
+          <div class="stat-card-top">
+            <h3 class="text">Monthly Expenses</h3>
+            <span class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M17 7v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M17 17H7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M17 17L7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </div>
+          <h1 id="expenseNumber" class="amount"><span id="rupeeSymbol">₹</span> 0</h1>
+        </div>
+      </div>
+
+      <div class="transaction-card">
+        <h3 class="transaction-card-heading">Add Transaction</h3>
+        <div class="inputs-parent">
+          <input
+            type="text"
+            class="title-input-box"
+            placeholder="Transaction title"
+          />
+          <input
+            type="number"
+            class="transaction-amount-input"
+            placeholder="₹0.00"
+            min="1"
+          />
+          <select class="dropdown-parent">
+            <option value="" class="dropdown-item">Select Category</option>
+            <option value="Food" class="dropdown-item">Food</option>
+            <option value="Travel" class="dropdown-item">Travel</option>
+            <option value="Shopping" class="dropdown-item">Shopping</option>
+            <option value="Entertainment" class="dropdown-item">
+              Entertainment
+            </option>
+            <option value="Salary" class="dropdown-item">Salary</option>
+          </select>
+        </div>
+
+        <div class="transaction-type-container">
+          <label>
+            <input type="radio" name="transactionType" value="income" id="incomeBtn" class="radio-btns"/> Income
+            </label>
+          <label>
+            <input type="radio" name="transactionType" value="expense" id="expenseBtn" class="radio-btns"/> Expense
+            </label>
+        </div>
+
+        <div class="submit-btn-parent">
+          <button class="submit-transaction">+ Add Transaction</button>
+        </div>
+      </div>
+
+      <div class="transaction-history-card">
+        <div class="history-card-head">
+          <h2 class="history-card-title">Recent Transactions</h2>
+          <span class="history-subtitle">Latest activity</span>
+        </div>
+
+        <div class="empty-state" id="emptyState" role="status" aria-live="polite">
+          <div class="empty-emoji" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M7 10h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M7 14h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M7.5 3.5h9A2.5 2.5 0 0 1 19 6v12a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 5 18V6a2.5 2.5 0 0 1 2.5-2.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="empty-text">
+            <p class="empty-title">No transactions yet</p>
+            <p class="empty-desc">Add your first income or expense to start tracking.</p>
+          </div>
+        </div>
+        <ul class="transactions-parent"></ul>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="web-container">
+        <div class="footer-container">
+          <p class="footer-text">WalletFlow  • Made with ☕ by Vatsal Dave</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
