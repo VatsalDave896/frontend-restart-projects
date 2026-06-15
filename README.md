@@ -199,10 +199,6 @@ The main objective of this repository is to strengthen frontend fundamentals by 
 * Responsive Design
 * UI/UX Development
 
-### 🌐 Live Demo
-
-[ResumePilot](https://resumepilot-by-vatsal-dave.vercel.app/)
-
 ---
 
 # 📈 Repository Progress
