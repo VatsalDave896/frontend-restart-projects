@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResumePilot — AI Resume Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <header class="toolbar">
+      <div class="toolbar-content">
+        <a href="index.html" class="toolbar-brand" style="text-decoration: none;">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>ResumePilot</span>
+        </a>
+        <div class="toolbar-actions">
+          <a href="form.html" class="btn btn-primary">
+            <i class="fa-solid fa-plus"></i> Build Resume
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="homepage-container">
+      <div class="first-section-subcontainer">
+        <h1 class="section-heading">
+          Resume Building Made <span id="typingText">Simple</span>
+        </h1>
+        <p class="section-content">
+          Transform your skills, education, and experience into a clean,
+          professional resume ready for job applications.
+        </p>
+        <a href="form.html" class="build-resume-btn">
+          Get Started
+          <span id="angleRight">
+            <i class="fa-solid fa-angle-right"></i>
+          </span>
+        </a>
+      </div>
+      <div class="second-section-subcontainer">
+        <div id="first-text" class="floating-texts">
+          <i class="fa-solid fa-check"></i>
+          ATS Friendly
+        </div>
+        <div id="second-text" class="floating-texts">
+          <i class="fa-solid fa-file-pdf"></i>
+          PDF Export
+        </div>
+        <img src="assets/demo-resume.png" alt="ATS Resume Preview" />
+      </div>
+    </section>
+    <section class="cards-section-container">
+      <div class="first-card-container card-container">
+        <h2 class="first-card-heading heading-container">
+          <span id="firstSvg" class="card-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+            </svg>
+          </span>
+          ATS Optimized
+        </h2>
+        <p class="first-card-content">
+          Ensure your resume is structured for Applicant Tracking Systems used
+          by companies worldwide.
+        </p>
+      </div>
+      <div class="second-card-container card-container">
+        <h2 class="second-card-heading heading-container">
+          <span id="secondSvg" class="card-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+              <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path>
+            </svg>
+          </span>
+          Showcase Your Skills
+        </h2>
+        <p class="second-card-content">
+          Highlight your projects, experience, and technical skills in a way
+          that stands out to employers.
+        </p>
+      </div>
+      <div class="third-card-container card-container">
+        <h2 class="third-card-heading heading-container">
+          <span id="thirdSvg" class="card-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              ></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+          </span>
+          Instant PDF Download
+        </h2>
+        <p class="third-card-content">
+          Export your resume as a professional PDF and start applying for jobs
+          immediately.
+        </p>
+      </div>
+    </section>
+    <div class="btn-parent">
+      <div class="cta-container">
+        <a href="form.html" class="build-resume-btn">
+          Build Resume
+          <span id="angleRight">
+            <i class="fa-solid fa-angle-right"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="web-container">
+        <div class="footer-container">
+          <p class="footer-text">
+            <span id="projectName">ResumePilot</span>
+            <span id="ownerName">Made by Vatsal Dave</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/home.js"></script>
+  </body>
+</html>

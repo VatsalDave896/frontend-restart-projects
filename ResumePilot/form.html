@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResumePilot — Build Your Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
+    <header class="toolbar">
+      <div class="toolbar-content">
+        <a href="index.html" class="toolbar-brand" style="text-decoration: none;">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>ResumePilot</span>
+        </a>
+        <div class="toolbar-actions">
+          <a href="index.html" class="btn btn-secondary">
+            <i class="fa-solid fa-house"></i> Home
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="form-container">
+      <h1 class="form-heading">
+        Let's Build Your <span id="typingTxt">Resume</span>
+      </h1>
+      <div class="progress-labels">
+        <span class="active-btn">Personal Information</span>
+        <span>Education</span>
+        <span>Experience</span>
+        <span>Certificates</span>
+        <span>Projects</span>
+        <span>Professional Summary</span>
+      </div>
+      <div class="form-card">
+        <form id="resumeForm">
+          <div class="form-step active-step">
+            <h2 class="step-heading">Personal Information</h2>
+            <div class="input-group">
+              <label for="firstNameInput">Name</label>
+              <input
+                type="text"
+                id="firstNameInput"
+                placeholder="John"
+                name="First Name"
+                required
+              />
+              <input
+                type="text"
+                id="lastNameInput"
+                placeholder="Doe"
+                name="First Name"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="emailIdInput">Email</label>
+              <input
+                type="email"
+                id="emailIdInput"
+                placeholder="john@example.com"
+                name="Email"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="phoneNumber">Phone Number</label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                placeholder="+91 9876543210"
+                name="Phone Number"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="linkedinUrl">LinkedIn Profile</label>
+              <input
+                type="url"
+                id="linkedinUrl"
+                placeholder="https://linkedin.com/in/username"
+                name="LinkedIn Url"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="jobTitle">Job Title</label>
+              <input
+                type="text"
+                id="jobTitle"
+                placeholder="Frontend Developer"
+                name="Job Title"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="githubUrl">GitHub Profile</label>
+              <input
+                type="url"
+                id="githubUrl"
+                placeholder="https://github.com/username"
+                name="GitHub Url"
+              />
+            </div>
+            <div class="input-group">
+              <label for="portfolioUrl">Portfolio Website (Optional)</label>
+              <input
+                type="url"
+                id="portfolioUrl"
+                placeholder="https://portfolio.com"
+                name="Portfolio Url"
+              />
+            </div>
+            <div class="input-group">
+              <label for="profilePhoto">Profile Photo</label>
+              <input type="file" id="profilePhoto" accept=".png,.jpg,.jpeg" name="Profile Photo" />
+              <img id="profilePreview" width="120" height="120" />
+            </div>
+          </div>
+          <div class="form-step hidden">
+            <h2 class="step-heading">Education</h2>
+            <div class="input-group">
+              <label for="degreeInput">Degree</label>
+              <input
+                type="text"
+                id="degreeInput"
+                placeholder="Computer Engineering"
+                name="Degree name"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="collegeInput">College / University</label>
+              <input
+                type="text"
+                id="collegeInput"
+                placeholder="Nirma University"
+                name="College / University Name"
+                required
+              />
+            </div>
+            <div class="row-inputs">
+              <div class="input-group">
+                <label for="cgpaInput">CGPA</label>
+                <input
+                  type="number"
+                  id="cgpaInput"
+                  placeholder="8.5"
+                  name="CGPA"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label for="graduationYearInput"> Graduation Year </label>
+                <input
+                  type="number"
+                  id="graduationYearInput"
+                  placeholder="2029"
+                  name="Graduation Year"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-step hidden">
+            <h2 class="step-heading">Experience</h2>
+            <div id="experienceFields">
+              <div class="input-group">
+                <label for="companyInput"> Company Name </label>
+                <input type="text" id="companyInput" placeholder="Google" />
+              </div>
+              <div class="input-group">
+                <label for="roleInput"> Role </label>
+                <input
+                  type="text"
+                  id="roleInput"
+                  placeholder="Frontend Developer Intern"
+                />
+              </div>
+              <div class="input-group">
+                <div class="duration-container">
+                  <div class="input-group">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" id="startDate" />
+                  </div>
+                  <div class="input-group">
+                    <label for="endDate">End Date</label>
+                    <input type="date" id="endDate" />
+                  </div>
+                </div>
+              </div>
+              <div class="input-group">
+                <label for="descriptionInput"> Description </label>
+                <textarea
+                  id="descriptionInput"
+                  rows="5"
+                  placeholder="Describe your responsibilities and achievements..."
+                ></textarea>
+              </div>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" id="currentlyWorking" />
+              <label for="currentlyWorking"> I currently work here </label>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" id="noExperience" />
+              <label for="noExperience">
+                I don't have any work experience
+              </label>
+            </div>
+            <button type="button" class="add-experience-btn">
+              + Add Another Experience
+            </button>
+          </div>
+          <div class="form-step hidden">
+            <h2 class="step-heading">Certificates</h2>
+            <div class="input-group">
+              <label for="certificateName"> Certificate Name </label>
+              <input
+                type="text"
+                id="certificateName"
+                placeholder="Meta Front-End Developer"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="issuingOrganization"> Issuing Organization </label>
+              <input
+                type="text"
+                id="issuingOrganization"
+                placeholder="Coursera"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="issueDate"> Issue Date </label>
+              <input type="date" id="issueDate" required />
+            </div>
+            <div class="input-group">
+              <label for="certificateUrl"> Certificate URL (Optional) </label>
+              <input type="url" id="certificateUrl" placeholder="https://..." />
+            </div>
+            <button type="button" class="add-certificate-btn">
+              + Add Another Certificate
+            </button>
+          </div>
+          <div class="form-step hidden">
+            <h2 class="step-heading" id="projects">Projects</h2>
+            <div class="input-group">
+              <label for="projectName"> Project Name </label>
+              <input type="text" id="projectName" placeholder="ResumePilot" />
+            </div>
+            <div class="input-group">
+              <label for="techStack"> Tech Stack </label>
+              <input
+                type="text"
+                id="techStack"
+                placeholder="HTML, CSS, JavaScript"
+              />
+            </div>
+            <div class="input-group">
+              <label for="projectDescription"> Description </label>
+              <textarea
+                id="projectDescription"
+                rows="5"
+                placeholder="Describe what your project does..."
+              ></textarea>
+            </div>
+            <div class="input-group">
+              <label for="githubLink"> GitHub Repository </label>
+              <input
+                type="url"
+                id="githubLink"
+                placeholder="https://github.com/..."
+              />
+            </div>
+            <div class="input-group">
+              <label for="liveLink"> Live Demo (Optional) </label>
+              <input type="url" id="liveLink" placeholder="https://..." />
+            </div>
+            <button type="button" class="add-project-btn">
+              + Add Another Project
+            </button>
+          </div>
+          <div class="form-step hidden">
+            <h2 class="step-heading">Professional Summary</h2>
+            <div class="input-group">
+              <label for="summaryInput"> Summary </label>
+              <textarea
+                id="summaryInput"
+                rows="6"
+                placeholder="Briefly describe your background, skills, and career goals..."
+                name="Summary"
+                required
+              ></textarea>
+            </div>
+            <div class="input-group">
+              <label for="skillsInput"> Skills (comma-separated) </label>
+              <input
+                type="text"
+                id="skillsInput"
+                placeholder="React, Node.js, Python, SQL, Git"
+                name="Skills"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="languagesInput"> Languages (comma-separated) </label>
+              <input
+                type="text"
+                id="languagesInput"
+                placeholder="English, Spanish, French"
+                name="Languages"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="interestsInput"> Interests (Optional, comma-separated) </label>
+              <input
+                type="text"
+                id="interestsInput"
+                placeholder="Reading, Chess, Open Source"
+                name="Interests"
+              />
+            </div>
+          </div>
+          <div class="form-navigation">
+            <button type="button" id="prevBtn">Previous</button>
+            <button type="button" id="nextBtn">Next</button>
+            <button type="button" id="generateBtn" class="hidden">
+              Generate Resume
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="web-container">
+        <div class="footer-container">
+          <p class="footer-text">
+            <span id="projectName">ResumePilot</span>
+            <span id="ownerName">Made by Vatsal Dave</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/form.js"></script>
+    <script src="js/preview.js"></script>
+  </body>
+</html>

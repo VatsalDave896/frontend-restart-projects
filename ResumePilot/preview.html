@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResumePilot - Professional Resume Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/preview.css" />
+  </head>
+  <body>
+    <header class="toolbar no-print">
+      <div class="toolbar-content">
+        <a href="index.html" class="toolbar-brand" style="text-decoration: none;">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>ResumePilot</span>
+        </a>
+        <div class="toolbar-actions">
+          <a href="form.html" class="btn btn-secondary">
+            <i class="fa-solid fa-pen-to-square"></i> Edit Resume
+          </a>
+          <button id="printBtn" class="btn btn-primary">
+            <i class="fa-solid fa-download"></i> Print / Save PDF
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="resume-wrapper">
+      <main class="resume-sheet" id="resumeSheet">
+        <div class="resume-sheet-inner" id="resumeSheetInner">
+          <header class="resume-header">
+            <div class="header-photo-container">
+              <img id="resumePhoto" src="" alt="Profile Photo" class="profile-photo hidden" />
+              <div id="avatarPlaceholder" class="avatar-placeholder">
+                <i class="fa-solid fa-user"></i>
+              </div>
+            </div>
+            <div class="header-text">
+              <h1 id="resumeFullName" class="candidate-name">{{fullName}}</h1>
+              <p id="resumeJobTitle" class="candidate-title">{{jobTitle}}</p>
+            </div>
+          </header>
+          <div class="resume-divider"></div>
+          <div class="resume-body">
+            <aside class="resume-sidebar">
+              <section class="sidebar-section">
+                <h2 class="section-title">Contact</h2>
+                <ul class="contact-info-list">
+                  <li id="infoEmail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="" target="_blank"></a>
+                  </li>
+                  <li id="infoPhone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span></span>
+                  </li>
+                  <li id="infoLinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="" target="_blank"></a>
+                  </li>
+                  <li id="infoGitHub">
+                    <i class="fa-brands fa-github"></i>
+                    <a href="" target="_blank"></a>
+                  </li>
+                  <li id="infoPortfolio">
+                    <i class="fa-solid fa-globe"></i>
+                    <a href="" target="_blank"></a>
+                  </li>
+                </ul>
+              </section>
+              <section class="sidebar-section">
+                <h2 class="section-title">Skills</h2>
+                <div id="skillsContainer" class="skills-tags-container">
+                </div>
+              </section>
+              <section class="sidebar-section">
+                <h2 class="section-title">Languages</h2>
+                <ul id="languagesList" class="comma-list">
+                </ul>
+              </section>
+              <section class="sidebar-section" id="interestsSection">
+                <h2 class="section-title">Interests</h2>
+                <ul id="interestsList" class="comma-list">
+                </ul>
+              </section>
+            </aside>
+            <div class="resume-main-content">
+              <section class="main-section">
+                <h2 class="section-title">Professional Summary</h2>
+                <p id="resumeSummary" class="summary-text">{{summary}}</p>
+              </section>
+              <section class="main-section" id="experienceSection">
+                <h2 class="section-title">Experience</h2>
+                <div id="experienceList" class="experience-container">
+                </div>
+              </section>
+              <section class="main-section" id="projectsSection">
+                <h2 class="section-title">Projects</h2>
+                <div id="projectsList" class="projects-container">
+                </div>
+              </section>
+              <section class="main-section" id="certificationsSection">
+                <h2 class="section-title">Certifications</h2>
+                <div id="certificationsList" class="certifications-container">
+                </div>
+              </section>
+              <section class="main-section">
+                <h2 class="section-title">Education</h2>
+                <div id="educationList" class="education-container">
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js/preview.js"></script>
+  </body>
+</html>

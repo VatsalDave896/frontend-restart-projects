@@ -1,0 +1,581 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #334155;
+  --accent-color: #000000;
+  --accent-hover: #1e293b;
+  --bg-screen: #f1f5f9;
+  --bg-card: #ffffff;
+  --border-light: #e2e8f0;
+  --shadow-preview: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-screen);
+  color: var(--primary-color);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.resume-wrapper {
+  padding: 32px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.resume-sheet {
+  background: var(--bg-card);
+  width: 210mm;
+  min-height: auto;
+  box-shadow: var(--shadow-preview);
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.resume-sheet-inner {
+  --resume-scale: 1;
+  width: calc(100% / var(--resume-scale));
+  transform: scale(var(--resume-scale));
+  transform-origin: top left;
+  display: flex;
+  flex-direction: column;
+  padding: 20mm 18mm;
+  box-sizing: border-box;
+}
+
+.resume-header {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding-bottom: 8px;
+}
+
+.header-photo-container {
+  flex-shrink: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--border-light);
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-photo.hidden {
+  display: none;
+}
+
+.avatar-placeholder {
+  font-size: 36px;
+  color: #cbd5e1;
+}
+
+.header-text {
+  flex-grow: 1;
+}
+
+.candidate-name {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0 0 4px 0;
+  letter-spacing: -0.5px;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+.candidate-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.resume-divider {
+  height: 2px;
+  background: var(--border-light);
+  margin: 20px 0;
+  position: relative;
+}
+
+.resume-divider::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 60px;
+  background: var(--primary-color);
+}
+
+.resume-body {
+  display: flex;
+  gap: 32px;
+  flex-grow: 1;
+}
+
+.resume-sidebar {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-right: 1px solid var(--border-light);
+  padding-right: 24px;
+}
+
+.resume-main-content {
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sidebar-section,
+.main-section {
+  page-break-inside: avoid;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--primary-color);
+  margin: 0 0 14px 0;
+  padding-bottom: 6px;
+}
+
+.contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-info-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--secondary-color);
+  word-break: break-all;
+}
+
+.contact-info-list li i {
+  color: var(--secondary-color);
+  width: 14px;
+  text-align: center;
+}
+
+.contact-info-list a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.contact-info-list a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.skills-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-badge {
+  background-color: #f1f5f9;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.skill-badge:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-color: var(--primary-color);
+}
+
+.comma-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.comma-list li {
+  font-size: 13px;
+  background: #f8fafc;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid #f1f5f9;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.certifications-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cert-item {
+  font-size: 13px;
+  padding-bottom: 12px;
+  
+}
+
+.cert-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cert-name {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 3px;
+  line-height: 1.3;
+}
+
+.cert-org-date {
+  color: var(--secondary-color);
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.cert-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cert-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.summary-text {
+  font-size: 14px;
+  color: var(--secondary-color);
+  line-height: 1.65;
+  margin: 0;
+  text-align: justify;
+}
+
+.experience-container,
+.projects-container,
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.timeline-title {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.timeline-company,
+.timeline-college {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.timeline-date {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  white-space: nowrap;
+}
+
+.timeline-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0 6px 0;
+}
+
+.tech-tag {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  background-color: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.timeline-links {
+  display: flex;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.timeline-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.15s ease;
+}
+
+.timeline-link:hover {
+  color: var(--primary-color);
+}
+
+.timeline-details {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.timeline-details li {
+  font-size: 13.5px;
+  color: var(--secondary-color);
+  position: relative;
+  padding-left: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.timeline-details li::before {
+  content: "•";
+  position: absolute;
+  left: 3px;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.timeline-gpa {
+  font-size: 13px;
+  color: var(--secondary-color);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: var(--bg-card);
+  }
+  .resume-wrapper {
+    padding: 0;
+  }
+  .resume-sheet {
+    width: 100%;
+    min-height: auto;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+  .resume-sheet-inner {
+    padding: 24px 18px;
+  }
+  .resume-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .resume-body {
+    flex-direction: column;
+    gap: 28px;
+  }
+  .resume-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-light);
+    padding-right: 0;
+    padding-bottom: 24px;
+  }
+  .resume-main-content {
+    width: 100%;
+  }
+  .timeline-header {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .timeline-date {
+    margin-top: 2px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .resume-sheet-inner {
+    padding: 18px 14px;
+  }
+
+  .resume-header {
+    gap: 12px;
+  }
+
+  .header-photo-container {
+    width: 76px;
+    height: 76px;
+  }
+
+  .candidate-name {
+    font-size: 24px;
+  }
+
+  .candidate-title {
+    font-size: 13px;
+  }
+
+  .resume-body,
+  .resume-sidebar,
+  .resume-main-content {
+    gap: 24px;
+  }
+
+  .section-title {
+    font-size: 13px;
+    letter-spacing: 0.9px;
+  }
+
+  .summary-text,
+  .timeline-details li {
+    font-size: 13px;
+  }
+
+  .timeline-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 10mm;
+  }
+
+  body, html {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    width: auto !important;
+    height: auto !important;
+    font-size: 11pt !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .resume-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  .resume-sheet {
+    width: 100% !important;
+    min-height: auto !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+  }
+
+  .resume-sheet-inner {
+    padding: 0 !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .section-title {
+    border-bottom: 1.5px solid #a1a1a1 !important;
+    color: var(--primary-color) !important;
+  }
+
+  .resume-divider {
+    border-bottom: 1.5px solid #a1a1a1 !important;
+    background: #a1a1a1 !important;
+  }
+
+  .resume-divider::after {
+    background: var(--primary-color) !important;
+  }
+
+  .skill-badge {
+    background-color: #f1f5f9 !important;
+    color: #1e293b !important;
+    border: 1px solid #cbd5e1 !important;
+  }
+
+  .tech-tag {
+    background-color: #f1f5f9 !important;
+    color: var(--secondary-color) !important;
+  }
+
+  .contact-info-list li i {
+    color: var(--secondary-color) !important;
+  }
+
+  .timeline-details li::before {
+    color: var(--secondary-color) !important;
+  }
+
+  .sidebar-section,
+  .main-section,
+  .timeline-item,
+  .cert-item {
+    page-break-inside: avoid !important;
+  }
+}
