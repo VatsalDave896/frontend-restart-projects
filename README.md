@@ -44,6 +44,7 @@ The main objective of this repository is to strengthen frontend fundamentals by 
 | Weather App                  | Responsive weather application with OpenWeather API integration                               | HTML, CSS, JavaScript, API           | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge\&logo=vercel)](https://frontend-restart-weather-app.vercel.app/) |
 | PassForge Password Generator | Responsive password generator with customizable password conditions and strength indicator    | HTML, CSS, JavaScript                | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge\&logo=vercel)](https://passforge-vatsal-dave.vercel.app/)        |
 | WalletFlow Expense Tracker   | Modern dark-themed fintech expense tracker with transaction history and Local Storage support | HTML, CSS, JavaScript, Local Storage | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge\&logo=vercel)](https://walletflow-by-vatsal-dave.vercel.app/)    |
+| ResumePilot | ATS-friendly resume builder with multi-step form, profile photo upload and professional resume preview generation | HTML, CSS, JavaScript, Local Storage | [![Live Demo](https://img.shields.io/badge/Live-Demo-black?style=for-the-badge&logo=vercel)](https://resumepilot-by-vatsal-dave.vercel.app/) |
 
 ---
 
@@ -163,15 +164,57 @@ The main objective of this repository is to strengthen frontend fundamentals by 
 
 ---
 
+---
+
+# Project 5 — ResumePilot
+
+## ✨ Features
+
+* Multi-step resume creation form
+* ATS-friendly resume template
+* Personal information management
+* Education details section
+* Experience details section
+* Dynamic certificates support
+* Dynamic projects support
+* Professional summary section
+* Profile photo upload (JPG/PNG)
+* Resume data persistence using Local Storage
+* Step progress saving after page reload
+* Resume preview generation
+* Responsive modern UI
+* Form validation and error handling
+
+## 🧠 Concepts Practiced
+
+* Advanced DOM Manipulation
+* Dynamic Form Generation
+* Local Storage Management
+* Multi-Step Form Logic
+* File Handling (Image Upload)
+* Data Persistence
+* Event Delegation
+* Form Validation
+* Dynamic Resume Rendering
+* Responsive Design
+* UI/UX Development
+
+### 🌐 Live Demo
+
+[ResumePilot](https://resumepilot-by-vatsal-dave.vercel.app/)
+
+---
+
 # 📈 Repository Progress
 
-| Status         | Progress                     |
-| -------------- | ---------------------------- |
-| ✅ Completed    | To-Do List App               |
-| ✅ Completed    | Weather App                  |
-| ✅ Completed    | PassForge Password Generator |
-| ✅ Completed    | WalletFlow Expense Tracker   |
-| 🚧 In Progress | More Frontend Projects       |
+| Status      | Progress                     |
+| ----------- | ---------------------------- |
+| ✅ Completed | To-Do List App               |
+| ✅ Completed | Weather App                  |
+| ✅ Completed | PassForge Password Generator |
+| ✅ Completed | WalletFlow Expense Tracker   |
+| ✅ Completed | ResumePilot                  |
+| 🚧 In Progress | More Frontend Projects    |
 
 ---
 
