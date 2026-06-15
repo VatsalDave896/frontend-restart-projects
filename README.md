@@ -164,8 +164,6 @@ The main objective of this repository is to strengthen frontend fundamentals by 
 
 ---
 
----
-
 # Project 5 — ResumePilot
 
 ## ✨ Features

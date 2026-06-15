@@ -4,7 +4,9 @@ const totalBalance = document.querySelector("#balanceNumber");
 const currentIncome = document.querySelector("#incomeNumber");
 const currentExpense = document.querySelector("#expenseNumber");
 const transactionTitleInput = document.querySelector(".title-input-box");
-const transactionAmountInput = document.querySelector(".transaction-amount-input");
+const transactionAmountInput = document.querySelector(
+  ".transaction-amount-input",
+);
 const categoryDropdown = document.querySelector(".dropdown-parent");
 const addTransactionBtn = document.querySelector(".submit-transaction");
 const transactionsParent = document.querySelector(".transactions-parent");
@@ -17,7 +19,9 @@ const mobileHeading = "Track spending smartly and stay in control";
 function updateResponsiveHeading() {
   if (!projectSubheading) return;
   const isSmallDevice = window.matchMedia("(max-width: 600px)").matches;
-  projectSubheading.textContent = isSmallDevice ? mobileHeading : desktopHeading;
+  projectSubheading.textContent = isSmallDevice
+    ? mobileHeading
+    : desktopHeading;
 }
 
 updateResponsiveHeading();
