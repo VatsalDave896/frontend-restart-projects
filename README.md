@@ -208,7 +208,6 @@ The main objective of this repository is to strengthen frontend fundamentals by 
 | ✅ Completed | PassForge Password Generator |
 | ✅ Completed | WalletFlow Expense Tracker   |
 | ✅ Completed | ResumePilot                  |
-| 🚧 In Progress | More Frontend Projects    |
 
 ---
 
