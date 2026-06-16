@@ -283,9 +283,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const lines = desc.split("\n").map(l => l.trim()).filter(l => l.length > 0);
     if (lines.length === 0) return "";
     return `
-      <ul class="timeline-details">
-        ${lines.map(line => `<li>${line}</li>`).join("")}
-      </ul>
+      <div class="timeline-details">
+        ${lines.map(line => `<div class="timeline-detail-line">${line}</div>`).join("")}
+      </div>
     `;
   }
 
@@ -502,6 +502,34 @@ document.addEventListener("DOMContentLoaded", () => {
         scale: 2,
         useCORS: true,
         backgroundColor: "#ffffff",
+        scrollX: 0,
+        scrollY: 0,
+        onclone: (clonedDoc) => {
+          clonedDoc.documentElement.classList.add("pdf-export");
+
+          const clonedSheet = clonedDoc.getElementById("resumeSheet");
+          const clonedInner = clonedDoc.getElementById("resumeSheetInner");
+
+          if (clonedSheet && clonedInner) {
+            clonedSheet.style.height = "auto";
+            clonedSheet.style.overflow = "visible";
+          }
+
+          const clonedBody = clonedDoc.querySelector(".resume-body");
+          if (clonedBody) {
+            clonedBody.style.flexGrow = "0";
+            clonedBody.style.minHeight = "auto";
+          }
+
+          clonedDoc
+            .querySelectorAll(
+              ".sidebar-section, .main-section, .timeline-item, .cert-item",
+            )
+            .forEach((el) => {
+              el.style.breakInside = "auto";
+              el.style.pageBreakInside = "auto";
+            });
+        },
       },
       jsPDF: {
         unit: "mm",
@@ -509,7 +537,7 @@ document.addEventListener("DOMContentLoaded", () => {
         orientation: "portrait",
       },
       pagebreak: {
-        mode: ["avoid-all", "css", "legacy"],
+        mode: ["css", "legacy"],
       },
     };
 

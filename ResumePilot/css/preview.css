@@ -372,7 +372,6 @@ body {
 }
 
 .timeline-details {
-  list-style: none;
   padding: 0;
   margin: 8px 0 0 0;
   display: flex;
@@ -380,21 +379,12 @@ body {
   gap: 6px;
 }
 
-.timeline-details li {
+.timeline-detail-line {
   font-size: 13.5px;
   color: var(--secondary-color);
-  position: relative;
-  padding-left: 16px;
+  padding-left: 12px;
   line-height: 1.5;
   text-align: justify;
-}
-
-.timeline-details li::before {
-  content: "•";
-  position: absolute;
-  left: 3px;
-  color: var(--secondary-color);
-  font-weight: bold;
 }
 
 .timeline-gpa {
@@ -406,6 +396,81 @@ body {
 
 .hidden {
   display: none !important;
+}
+
+.pdf-export .resume-wrapper {
+  padding: 0 !important;
+}
+
+.pdf-export .resume-sheet-inner {
+  padding: 16mm 14mm !important;
+}
+
+.pdf-export .resume-header {
+  gap: 18px !important;
+  padding-bottom: 4px !important;
+}
+
+.pdf-export .candidate-name {
+  font-size: 28px !important;
+}
+
+.pdf-export .candidate-title {
+  font-size: 14px !important;
+}
+
+.pdf-export .resume-divider {
+  margin: 14px 0 !important;
+}
+
+.pdf-export .resume-body {
+  gap: 14px !important;
+  flex-grow: 0 !important;
+}
+
+.pdf-export .resume-sidebar,
+.pdf-export .resume-main-content {
+  gap: 12px !important;
+}
+
+.pdf-export .section-title {
+  margin-bottom: 10px !important;
+  padding-bottom: 4px !important;
+}
+
+.pdf-export .contact-info-list {
+  gap: 8px !important;
+}
+
+.pdf-export .skills-tags-container,
+.pdf-export .comma-list,
+.pdf-export .timeline-tech-stack,
+.pdf-export .timeline-links {
+  gap: 6px !important;
+}
+
+.pdf-export .experience-container,
+.pdf-export .projects-container,
+.pdf-export .education-container,
+.pdf-export .certifications-container {
+  gap: 10px !important;
+}
+
+.pdf-export .timeline-item {
+  gap: 2px !important;
+}
+
+.pdf-export .timeline-details {
+  gap: 4px !important;
+  margin-top: 6px !important;
+}
+
+.pdf-export .timeline-detail-line {
+  line-height: 1.35 !important;
+}
+
+.pdf-export .cert-item {
+  padding-bottom: 4px !important;
 }
 
 @media screen and (max-width: 800px) {
@@ -487,7 +552,7 @@ body {
   }
 
   .summary-text,
-  .timeline-details li {
+  .timeline-detail-line {
     font-size: 13px;
   }
 
@@ -568,14 +633,14 @@ body {
     color: var(--secondary-color) !important;
   }
 
-  .timeline-details li::before {
-    color: var(--secondary-color) !important;
-  }
-
-  .sidebar-section,
-  .main-section,
   .timeline-item,
   .cert-item {
     page-break-inside: avoid !important;
+  }
+
+  .sidebar-section,
+  .main-section {
+    page-break-inside: auto !important;
+    break-inside: auto !important;
   }
 }
